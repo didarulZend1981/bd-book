@@ -14,6 +14,14 @@ const NavBar = () => {
               isActive ? 'bg-[#59C6D2] font-bold' : 'font-bold'
             } to="/PagesToRead">Pages To Read</NavLink></li>
   
+  <li><NavLink className={({ isActive }) =>
+              isActive ? 'bg-[#59C6D2] font-bold' : 'font-bold'
+            } to="/Faq">Faq</NavLink></li>
+   <li><NavLink className={({ isActive }) =>
+              isActive ? 'bg-[#59C6D2] font-bold' : 'font-bold'
+            } to="/About">About US</NavLink></li>
+  
+  
  
 </>
 
