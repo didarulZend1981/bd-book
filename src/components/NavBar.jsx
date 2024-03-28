@@ -5,20 +5,20 @@ const NavBar = () => {
   const links = <>
   
   <li><NavLink className={({ isActive }) =>
-              isActive ? 'bg-[#59C6D2] font-bold' : 'font-bold'
+              isActive ? 'bg-[#59C6D2] font-bold mx-2' : 'font-bold mx-2'
             } to="/" >Home</NavLink></li>
   <li><NavLink  className={({ isActive }) =>
-              isActive ? 'bg-[#59C6D2] font-bold' : 'font-bold'
+              isActive ? 'bg-[#59C6D2] font-bold mx-1' : 'font-bold mx-1'
             } to="/ListedBooks">Listed Books</NavLink></li>
   <li><NavLink className={({ isActive }) =>
-              isActive ? 'bg-[#59C6D2] font-bold' : 'font-bold'
+              isActive ? 'bg-[#59C6D2] font-bold mx-2' : 'font-bold mx-2'
             } to="/PagesToRead">Pages To Read</NavLink></li>
   
   <li><NavLink className={({ isActive }) =>
-              isActive ? 'bg-[#59C6D2] font-bold' : 'font-bold'
+              isActive ? 'bg-[#59C6D2] font-bold mx-2' : 'font-bold mx-2'
             } to="/Faq">Faq</NavLink></li>
    <li><NavLink className={({ isActive }) =>
-              isActive ? 'bg-[#59C6D2] font-bold' : 'font-bold'
+              isActive ? 'bg-[#59C6D2] font-bold mx-2' : 'font-bold mx-2'
             } to="/About">About US</NavLink></li>
   
   

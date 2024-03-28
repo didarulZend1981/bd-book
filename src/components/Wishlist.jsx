@@ -22,7 +22,7 @@ const Wishlist = () => {
 
   return (
     <div>
-      <h2>WishList .{readWishLists.length}</h2>
+      
       {readWishLists.map(item => (
       <div className="card lg:card-side bg-base-100 shadow-xl h-[277px] my-[20px] py-[15px] px-[15px]">
         <div className="w-1/4 bg-[#f3f3f3] rounded-xl py-10">
