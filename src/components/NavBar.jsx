@@ -5,13 +5,13 @@ const NavBar = () => {
   const links = <>
   
   <li><NavLink className={({ isActive }) =>
-              isActive ? 'text-primary font-bold' : 'font-bold'
-            } to="/">Home</NavLink></li>
+              isActive ? 'bg-[#59C6D2] font-bold' : 'font-bold'
+            } to="/" >Home</NavLink></li>
   <li><NavLink  className={({ isActive }) =>
-              isActive ? 'text-primary font-bold' : 'font-bold'
+              isActive ? 'bg-[#59C6D2] font-bold' : 'font-bold'
             } to="/ListedBooks">Listed Books</NavLink></li>
   <li><NavLink className={({ isActive }) =>
-              isActive ? 'text-primary font-bold' : 'font-bold'
+              isActive ? 'bg-[#59C6D2] font-bold' : 'font-bold'
             } to="/PagesToRead">Pages To Read</NavLink></li>
   
  
@@ -19,7 +19,7 @@ const NavBar = () => {
 
   
   return (
-    <div className="navbar bg-base-100 border-2 px-4 fixed z-10">
+    <div className="navbar bg-base-100 border-2 px-4 fixed z-10 w-10/12 max-auto">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -29,15 +29,16 @@ const NavBar = () => {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="text-xl text-[#232121] font-black">Book Vibe</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       {links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="navbar-end gap-5">
+    <a className="btn bg-[#23BE0A] text-[#FFFFFF] hover:bg-[#59C6D2]">Sign In</a>
+    <a className="btn bg-[#23BE0A] text-[#FFFFFF] hover:bg-[#59C6D2]">Sign Up</a>
   </div>
 </div>
   );
