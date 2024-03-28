@@ -18,7 +18,7 @@ const Book = ({book}) => {
           <div className="card-body items-left text-left">
             <div>
               <span>{book.tags.map((item, index) => (
-          <span className="m-2 p-2 text-[7px] text-[#23BE0A] rounded-full bg-slate-100 " key={index}>{item}</span>
+          <span className="m-2 p-2 text-[10px] text-[#23BE0A] rounded-full bg-slate-100 " key={index}>{item}</span>
         ))}</span>
         
       
