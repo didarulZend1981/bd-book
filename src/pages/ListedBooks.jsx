@@ -64,20 +64,34 @@ const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(0);
   
   return (
+    <div>
+    
+    <div className='w-full m-auto   mx-auto space-y-12 overflow-hidden border-2'>
+    
 
-    <div className='max-w-3xl px-6 py-16 mx-auto space-y-12 overflow-hidden'>
-      
+    <div className="w-full m-auto h-[100px] text-center pt-[30px] bg-[#f2f2f2]">
+      <h1 className="text-[28px] font-bold">Books</h1>
 
-      
-      <h2>Sort Array by Field</h2>
-      <label htmlFor="sortField">Sort by:</label>
-      <select id="sortField" value={sortBy} onChange={handleSort}>
-        <option value="id">Rating</option>
+    </div>
+    
+    <div className="w-full m-auto text-center">
+    
+  
+
+  <select id="sortField" value={sortBy} onChange={handleSort} className="select select-bordered bg-[#23be0a] text-[#fff]">
+    <option value="by">Sort by:</option>
+    <option value="id">Rating</option>
         <option value="totalPages">Number of pages</option>
         <option value="yearOfPublishing">Publishing</option>
-        {/* Add more options for other fields if needed */}
-      </select>
+  </select>
+
+
+
+    </div>
+     
+     
    
+
 
 
       <article className='space-y-8 '>
@@ -140,6 +154,7 @@ const ListedBooks = () => {
        
         <Outlet></Outlet>
       </article>
+    </div>
     </div>
   );
 };
